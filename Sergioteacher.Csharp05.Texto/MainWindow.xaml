@@ -6,7 +6,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Sergioteacher.Csharp05.Texto"
         mc:Ignorable="d"
-        Title="Mini Editor ..." Height="450" Width="800" Background="#FF86C59D" FontSize="22" Closing="WEdit_Closing" >
+        Title="Mini Editor ..." Height="450" Width="800" Background="#FFAEC9B8" FontSize="22" Closing="WEdit_Closing" >
 
     <Grid>
         <Grid.RowDefinitions>
