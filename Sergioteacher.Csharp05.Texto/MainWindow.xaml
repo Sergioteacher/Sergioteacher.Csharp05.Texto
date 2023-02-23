@@ -1,0 +1,33 @@
+﻿<Window x:Class="Sergioteacher.Csharp05.Texto.MainWindow"
+        x:Name="WEdit"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Sergioteacher.Csharp05.Texto"
+        mc:Ignorable="d"
+        Title="Mini Editor ..." Height="450" Width="800" Background="#FF86C59D" FontSize="22" Closing="WEdit_Closing" >
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition />
+            <ColumnDefinition />
+        </Grid.ColumnDefinitions>
+        <StackPanel Grid.Column="0" Grid.Row="0" >
+            <CheckBox x:Name="ChOk" Click="ChOk_Click" Content="Guardar"  HorizontalAlignment="Left" Foreground="SeaGreen" />
+            <Button x:Name="Bdialogo" Click="Bdialogo_Click" Content=" Abrir " HorizontalAlignment="Center" Foreground="SeaGreen" />
+            <Button x:Name="Bnuevo" Click="Bnuevo_Click" Content=" Nuevo " HorizontalAlignment="Right" />
+
+        </StackPanel>
+        
+        <TextBox x:Name="Tedit"  Grid.Row="1" Grid.RowSpan="3" Grid.Column="0" Grid.ColumnSpan="2" TextWrapping="NoWrap" Text="Cargando..." AcceptsReturn="True" AcceptsTab="True" ScrollViewer.CanContentScroll="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" />
+
+
+    </Grid>
+</Window>
